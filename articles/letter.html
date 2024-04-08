@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1000일 축하해 !</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/flower.css" />
+    <style>
+        * {
+            font-family: 'Poor Story', cursive;
+        }
+        
+        body {
+            background-color: lightblue;
+        }
+        .envelope {
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+            width: 200px;
+            height: 200px;
+            margin: 200px auto 0px auto;
+            cursor: pointer;
+        }
+        .envelope-msg {
+            color: white;
+            text-align: center;
+        }
+        .letter-close {
+            display: block;
+        }
+        .letter-open {
+            display: none;
+        }
+        .rtan {
+            width: 200px;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            background-color: white;
+            margin: 100px auto 0px auto;
+            border-radius: 100px;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .messagebox {
+            width: 600px;
+            margin: auto;
+            font-size: 20px;
+            line-height: 30px;
+            background-color: ivory;
+            color: brown;
+            padding: 30px;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+        .from {
+            text-align: right;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+
+        .to {
+            text-align: left;
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+        @media screen and (max-width: 760px) {
+            .messagebox {
+                width: 300px;
+                font-size: 20px;
+                line-height: 30px;
+                padding: 20px;
+            }
+            .rtan {
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0px auto;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            .envelope {
+                margin: 150px auto 0px auto;
+            }
+        }
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    $(window).load(function () {
+        $('body').sakura();
+    });
+    </script>
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+    </script>
+</head>
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">편지를 열어봐!</h2>
+    </div>
+    <div class="letter-open">
+        <h1>1000일 축하해 :></h1>
+        <div class="messagebox">
+            <p class="to">To.레나</p>
+            123456789123456789123456789123456789123456789123456789123123 <br />
+            123456789123456789123456789123456789123456789123456789 <br />
+            123456789123456789123456789123456789123456789123456789 <br />
+            123456789123456789123456789123456789123456789123456789 <br />
+            123456789123456789123456789123456789123456789123456789 <br />
+            123456789123456789123456789123456789123456789123456789 <br />
+            123456789123456789123456789123456789123456789123456789 <br />
+            123456789123456789123456789123456789123456789123456789 <br />
+            123456789123456789123456789123456789123456789123456789 <br />
+            123456789123456789123456789123456789123456789123456789 <br />
+            123456789123456789123456789123456789123456789123456789 <br />
+            123456789123456789123456789123456789123456789123456789 <br />
+            123456789123456789123456789123456789123456789123456789 <br />
+            123456789123456789123456789123456789123456789123456789 <br />
+            123456789123456789123456789123456789123456789123456789 <br />
+            123456789123456789123456789123456789123456789123456789 <br />
+            123456789123456789123456789123456789123456789123456789 <br />
+            123456789123456789123456789123456789123456789123456789 <br />
+            123456789123456789123456789123456789123456789123456789 <br />
+            123456789123456789123456789123456789123456789123456789 <br />
+            123456789123456789123456789123456789123456789123456789 <br />
+            .. <br />
+            .. <br />
+            .. <br />
+            .. <br />
+            <p class="from">2024.04.08 상무가</p>
+        </div>
+    </div>
+    <script src="js/flower.js"></script>
+    
+</body>
+</html>
