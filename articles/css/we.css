@@ -3,6 +3,13 @@
     font-family: 'Montserrat';
 }
 
+body {
+    background-color: rgb(230, 212, 230);
+}
+
+h2 {
+    text-align: center;
+}
 header {
     text-align: center;
     font-weight: bold;
@@ -12,6 +19,8 @@ header {
 
 section {
     margin-top: 50px;
+    border: 1px solid rgb(247, 166, 45);
+    border-radius: 10%;
 }
 
 section .common {
